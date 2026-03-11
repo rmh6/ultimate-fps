@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Game Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Mini Game Hub</h1>
+    <p>Choisis un jeu et lance-toi.</p>
+</header>
+
+<main>
+    <section id="games-grid">
+
+        <!-- Subway Surfer-like -->
+        <div class="game-card">
+            <h2>Runner 3D</h2>
+            <p>Un jeu de course infinie façon Subway Surfers.</p>
+            <button onclick="openGame('games/runner/index.html')">Jouer</button>
+        </div>
+
+        <!-- Rocket League-like -->
+        <div class="game-card">
+            <h2>Car Arena</h2>
+            <p>Match de voitures dans une arène.</p>
+            <button onclick="openGame('games/cararena/index.html')">Jouer</button>
+        </div>
+
+        <!-- FPS / jeu d'armes -->
+        <div class="game-card">
+            <h2>War Zone FPS</h2>
+            <p>FPS simple avec armes et cibles.</p>
+            <button onclick="openGame('games/fps/index.html')">Jouer</button>
+        </div>
+
+        <!-- PvP -->
+        <div class="game-card">
+            <h2>PvP Arena</h2>
+            <p>Affronte un autre joueur en local.</p>
+            <button onclick="openGame('games/pvp/index.html')">Jouer</button>
+        </div>
+
+        <!-- Autres jeux -->
+        <div class="game-card">
+            <h2>Platformer</h2>
+            <p>Petit jeu de plateforme 2D.</p>
+            <button onclick="openGame('games/platformer/index.html')">Jouer</button>
+        </div>
+
+    </section>
+
+    <section id="game-viewer">
+        <h2 id="game-title">Aucun jeu lancé</h2>
+        <iframe id="game-frame" src="" frameborder="0"></iframe>
+    </section>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>

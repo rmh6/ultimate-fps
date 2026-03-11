@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background: #222;
+    border-bottom: 1px solid #333;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+/* Liste des jeux */
+#games-grid {
+    width: 35%;
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid #333;
+    background: #181818;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.game-card {
+    background: #242424;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.game-card h2 {
+    margin: 0 0 8px;
+}
+
+.game-card p {
+    margin: 0 0 12px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.game-card button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background: #1e90ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.game-card button:hover {
+    background: #0f70d0;
+}
+
+/* Zone d'affichage du jeu */
+#game-viewer {
+    width: 65%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #101010;
+}
+
+#game-title {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+#game-frame {
+    flex: 1;
+    width: 100%;
+    background: #000;
+}
